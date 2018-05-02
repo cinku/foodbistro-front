@@ -3,7 +3,7 @@
       <div class="container">
         <router-link to="/"><img src="../assets/bistroheader.svg" :class="{ 'header-img--small': $route.path !== '/' }"></router-link>
         <h1 :class="{ 'hidden': $route.path !== '/' }">Welcome to foodbistro</h1>
-        <div class="row" :class="{ 'hidden': $route.path !== '/' }">
+        <div class="row animated fadeIn" :class="{ 'hidden': $route.path !== '/' }">
           <div class="input-group col-md-6 offset-md-3 mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text" id="basic-addon1"><i class="fa fa-utensils"></i></span>
@@ -40,7 +40,7 @@ export default {
 <style lang="scss" scoped>
 img {
   width: 550px;
-  transition: width 1s ease-in-out;
+  transition: width 0.3s ease-in-out;
 }
 
 .header-img--small {
